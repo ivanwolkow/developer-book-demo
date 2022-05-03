@@ -21,8 +21,7 @@ public class BinarySearch {
         if (nums[start] > value || nums[end] < value) return -1;
 
         if (start == end) {
-            if (nums[start] == value) return start;
-            else return -1;
+            return (nums[start] == value) ? start : -1;
         }
 
         int mid = (1 + end - start) / 2;
